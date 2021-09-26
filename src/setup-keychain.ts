@@ -13,11 +13,8 @@ async function run() {
     let keychainPassword = core.getInput('keychain-password');
     let keychainTimeout = core.getInput('keychain-timeout');
 
-    await exec.exec('security', [
-      'delete-keychain',
-      keychainName
-     ]);
-    
+    await exec.exec('security', ['delete-keychain', keychainName]);
+
     await exec.exec('security', [
       'create-keychain',
       '-p',
