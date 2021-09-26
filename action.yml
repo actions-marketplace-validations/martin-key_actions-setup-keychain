@@ -1,9 +1,9 @@
-name: 'Setup Keychain'
+name: 'Setup Keychain and delete if the chain exists'
 description: 'Set up new macOS keychain for easy certificate management'
 branding:
   icon: 'feather'
-  color: 'orange'
-author: 'Jaehong Kang'
+  color: 'blue'
+author: 'Jaehong Kang & Martin Kuvandzhiev'
 inputs:
   keychain-name:
     description: 'Name to use for new keychain.'
